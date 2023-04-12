@@ -5,14 +5,19 @@ body {
     font-weight: bold;
 }
 
+button,
+nav {
+    cursor: pointer;
+}
+
 img {
     width: 50px;
-    height: 45px;
+    height: 50px;
     border-radius: 30px;
 }
 
 /* SIDEBAR *******************************************/
-.sidebar {
+.sideBar {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -24,13 +29,13 @@ img {
     font-size: 1.2rem;
 }
 
-.sidebartitle {
+.sidebarTitle {
     text-align: center;
     margin-top: 30px;
     font-size: 2rem;
 }
 
-.sidebartitle i {
+.sidebarTitle i {
     font-size: 1.7rem;
 }
 
@@ -42,7 +47,7 @@ img {
     margin-left: 20px;
 }
 
-.navtexts {
+.navTexts {
     display: grid;
     grid-template-columns: 30px 100px;
     grid-template-rows: 20px 20px;
@@ -52,16 +57,16 @@ img {
 }
 
 /* HEADER ****************************************/
-header {
+.mainContainer {
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.555);
-    gap: 20px;
+    gap: 120px;
     width: 85vw;
     height: 230px;
 }
 
-.searchsec {
+header {
     display: flex;
     flex-direction: column;
     max-width: 60vw;
@@ -70,17 +75,17 @@ header {
     gap: 60px;
 }
 
-.searchbar {
+.searchBar {
     display: flex;
     justify-content: space-between;
 
 }
 
-.searchbar i {
+.searchBar i {
     font-size: 1.5rem;
 }
 
-.searchbar input {
+.searchBar input {
     border: none;
     height: 30px;
     background-color: #E2E8F0;
@@ -100,13 +105,13 @@ header {
 }
 
 /* subhead user and btns ************** */
-.subhead {
+.subHead {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.hellocontainer {
+.helloContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +120,7 @@ header {
     height: 50px;
 }
 
-.hellocontainer img {
+.helloContainer img {
     width: 90px;
     height: 90px;
     border-radius: 50px;
@@ -125,12 +130,12 @@ header {
     font-size: 1.4rem;
 }
 
-.mainbtn {
+.mainBtn {
     display: flex;
     gap: 30px;
 }
 
-.mainbtn button {
+.mainBtn button {
     border: none;
     background-color: #1992D4;
     font-weight: bold;
@@ -139,4 +144,26 @@ header {
     border-radius: 20px;
     width: 100px;
     height: 40px;
+}
+
+/* MAIN CARDS ****************************************/
+
+.cardsContainer {
+    display: grid;
+    margin-left: 60px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 190px 190px 190px;
+    gap: 30px;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-color: #F0B429;
+    border-width: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
 }
