@@ -2,13 +2,12 @@ body {
     display: flex;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-
-
 img {
-    max-width: 50px;
-    max-height: 45px;
+    width: 50px;
+    height: 45px;
     border-radius: 30px;
 }
 
@@ -21,7 +20,6 @@ img {
     height: 100vh;
     background-color: #1992D4;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
     color: white;
     font-size: 1.2rem;
 }
@@ -60,22 +58,34 @@ header {
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.555);
     gap: 20px;
     width: 85vw;
-
+    height: 230px;
 }
 
 .searchsec {
     display: flex;
+    flex-direction: column;
+    max-width: 60vw;
     margin-top: 20px;
     margin-left: 30px;
     gap: 60px;
 }
 
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.searchbar i {
+    font-size: 1.5rem;
+}
+
 .searchbar input {
     border: none;
-    height: 25px;
-    background-color: rgba(128, 128, 128, 0.39);
-    width: 50vw;
-    border-radius: 10px;
+    height: 30px;
+    background-color: #E2E8F0;
+    width: 40vw;
+    border-radius: 20px;
 }
 
 /* user *****************************/
@@ -92,16 +102,41 @@ header {
 /* subhead user and btns ************** */
 .subhead {
     display: flex;
-    margin-left: 30px;
     justify-content: space-between;
-    max-width: 70vw;
+    align-items: center;
 }
 
-.hello {
+.hellocontainer {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: left;
     gap: 10px;
     height: 50px;
+}
+
+.hellocontainer img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+}
+
+.hello {
+    font-size: 1.4rem;
+}
+
+.mainbtn {
+    display: flex;
+    gap: 30px;
+}
+
+.mainbtn button {
+    border: none;
+    background-color: #1992D4;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
 }
