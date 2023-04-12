@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+i {
+    margin-right: 15px;
+}
+
+img {
+    max-width: 50px;
+    max-height: 45px;
+    border-radius: 30px;
+}
+
+/* SIDEBAR *******************************************/
+.sidebar {
+    text-align: left;
+    min-width: 15vw;
+    height: 100vh;
+    background-color: #1992D4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.misc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.navtexts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+/* HEADER ****************************************/
+header {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.555);
+    gap: 20px;
+    width: 85vw;
+
+}
+
+.searchsec {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 60px;
+}
+
+.searchbar input {
+    border: none;
+    height: 25px;
+    background-color: rgba(128, 128, 128, 0.39);
+    width: 50vw;
+    border-radius: 10px;
+}
+
+/* user *****************************/
+.user {
+    margin-top: -10px;
+    display: flex;
+    gap: 15px;
+}
+
+.user i {
+    margin-top: 15px;
+}
+
+/* subhead user and btns ************** */
+.subhead {
+    display: flex;
+    margin-left: 30px;
+    justify-content: space-between;
+    max-width: 70vw;
+}
+
+.hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    height: 50px;
+}
+
+.mainbtn button {
+    border: ;
+}
