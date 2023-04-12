@@ -4,9 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-i {
-    margin-right: 15px;
-}
+
 
 img {
     max-width: 50px;
@@ -16,6 +14,8 @@ img {
 
 /* SIDEBAR *******************************************/
 .sidebar {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     min-width: 15vw;
     height: 100vh;
@@ -23,18 +23,32 @@ img {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: white;
+    font-size: 1.2rem;
+}
+
+.sidebartitle {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.sidebartitle i {
+    font-size: 1.7rem;
 }
 
 .misc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 40px 100px;
+    grid-template-rows: 30px 30px 30px;
     margin-top: 30px;
+    margin-left: 20px;
 }
 
 .navtexts {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 30px 100px;
+    grid-template-rows: 20px 20px;
+    margin-top: 60px;
     margin-left: 20px;
     gap: 10px;
 }
@@ -90,8 +104,4 @@ header {
     text-align: left;
     gap: 10px;
     height: 50px;
-}
-
-.mainbtn button {
-    border: ;
 }
