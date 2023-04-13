@@ -62,7 +62,7 @@ img {
     display: flex;
     flex-direction: column;
     background-color: white;
-    gap: 80px;
+    gap: 30px;
     width: 85vw;
 }
 
@@ -163,9 +163,14 @@ header {
 
 .middleColumns {
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 185px 185px 185px;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 10px 185px 185px 185px;
     gap: 30px;
+}
+
+.cardtitleProject {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .card {
@@ -183,8 +188,8 @@ header {
 .sideColumn {
     display: grid;
     grid-template-columns: 350px;
-    grid-template-rows: 275px 270px;
-    gap: 70px;
+    grid-template-rows: 10px 275px 10px 270px;
+    gap: 30px;
 }
 
 .cardsideColumn {
