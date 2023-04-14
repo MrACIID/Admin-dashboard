@@ -25,8 +25,9 @@ img {
     display: flex;
     flex-direction: column;
     text-align: left;
-    min-width: 15vw;
-    height: 100vh;
+    padding-right: 30px;
+    padding-left: 10px;
+    margin-bottom: -48px;
     background-color: #292522;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -45,7 +46,7 @@ img {
 
 .misc {
     display: grid;
-    grid-template-columns: 40px 100px;
+    grid-template-columns: 40px 1fr;
     grid-template-rows: 30px 30px 30px;
     margin-top: 30px;
     margin-left: 20px;
@@ -53,7 +54,7 @@ img {
 
 .navTexts {
     display: grid;
-    grid-template-columns: 30px 100px;
+    grid-template-columns: 30px 1fr;
     grid-template-rows: 20px 20px;
     margin-top: 60px;
     margin-left: 20px;
@@ -82,7 +83,7 @@ header {
 .headerBackground {
     background-color: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
-    height: 230px;
+    padding-bottom: 30px;
 }
 
 .searchBar {
@@ -113,12 +114,10 @@ header {
 /* user *****************************/
 .user {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
-.user i {
-    margin-top: 15px;
-}
 
 /* subhead user and btns ************** */
 .subHead {
@@ -173,7 +172,7 @@ header {
 
 .yourProject {
     display: grid;
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 10px 185px 185px 185px;
     gap: 30px;
 }
@@ -207,6 +206,7 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 420px;
+    padding: 20px;
     gap: 20px;
 }
 
@@ -283,5 +283,11 @@ header {
 @media (max-width: 1737px) {
     .cardsContainer {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 963px) {
+    .mainBtn button {
+        width: 70px;
     }
 }
