@@ -15,6 +15,9 @@ img {
     width: 50px;
     height: 50px;
     border-radius: 30px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #F0B429;
 }
 
 /* SIDEBAR *******************************************/
@@ -24,7 +27,7 @@ img {
     text-align: left;
     min-width: 15vw;
     height: 100vh;
-    background-color: #404040;
+    background-color: #292522;
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 1.2rem;
@@ -85,7 +88,14 @@ header {
 .searchBar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
 
+.glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .searchBar i {
@@ -102,7 +112,6 @@ header {
 
 /* user *****************************/
 .user {
-    margin-top: -10px;
     display: flex;
     gap: 20px;
 }
@@ -172,20 +181,22 @@ header {
 .cardtitleProject {
     grid-column-start: 1;
     grid-column-end: 3;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.842);
+    background-color: #292522;
     border-style: solid;
-    border-bottom: none;
     border-top: none;
+    border-bottom: none;
     border-right: none;
-    border-color: #F0B429;
+    border-left-color: #F0B429;
     color: white;
-    border-width: 10px;
+    border-left-width: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.075);
 }
@@ -196,7 +207,7 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 420px;
-    gap: 40px;
+    gap: 20px;
 }
 
 .contentContainer p,
@@ -221,6 +232,7 @@ header {
 
 .cardButton i {
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 /* side *************/
@@ -229,24 +241,25 @@ header {
     flex-direction: column;
     gap: 20px;
     max-width: 300px;
+}
 
+.cardtitleAnnouncements,
+.cardtitleTrending {
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .cardcontentSide {
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 
 .userTrending {
     display: flex;
     gap: 20px;
-    justify-content: center;
 }
 
-.userInfo {
-    align-self: center;
-}
+
 
 /*SIDE CARD COLUMN *************/
 .sideColumn {
@@ -260,8 +273,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+    background-color: #292522;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.075);
     border-width: 10px;
     border-radius: 10px;
+}
+
+@media (max-width: 1737px) {
+    .cardsContainer {
+        flex-direction: column;
+    }
 }
