@@ -68,7 +68,7 @@ img {
     flex-direction: column;
     background-color: white;
     gap: 30px;
-    width: 85vw;
+    width: 100vw;
 }
 
 header {
@@ -148,6 +148,12 @@ header {
 .mainBtn {
     display: flex;
     gap: 30px;
+    background-color: #00000013;
+    padding: 15px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: -40px;
 }
 
 .mainBtn button {
